@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Federal Hospitality Equipment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Top Header -->
+  <div class="container-fluid bg-light border-bottom py-2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-3 text-center text-md-start small">
+          <span>Customer Helpline: </span>
+          <i class="bi bi-headset text-danger"></i>
+          <strong>1300 659 409</strong>
+        </div>
+        <div class="col-md-6 d-none d-md-flex gap-4 small justify-content-start">
+          <a href="#" class="text-decoration-none text-dark"><i class="bi bi-info-circle text-danger me-1"></i> About
+            Us</a>
+          <a href="#" class="text-decoration-none text-dark"><i class="bi bi-envelope text-danger me-1"></i> Contact
+            Us</a>
+          <a href="#" class="text-decoration-none text-dark"><i class="bi bi-shield-lock text-danger me-1"></i> Service
+            & Warranty</a>
+          <a href="#" class="text-decoration-none text-dark"><i class="bi bi-journal-text text-danger me-1"></i>
+            Catalogues</a>
+        </div>
+        <div class="col-md-3 d-none d-md-flex align-items-center justify-content-end">
+          <span class="me-3">Excl. GST</span>
+          <div class="form-check form-switch m-0">
+            <input class="form-check-input" type="checkbox" role="switch" id="gstToggle" checked />
+          </div>
+          <span class="ms-1">Incl. GST</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle Header -->
+  <div class="container-fluid py-3">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Hamburger (Mobile Only) -->
+        <div class="col-2 d-md-none">
+          <button class="btn p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+            aria-controls="offcanvasMenu">
+            <i class="bi bi-list fs-2"></i>
+          </button>
+        </div>
+
+        <!-- Logo -->
+        <div class="col-8 col-md-2 text-md-start mb-3 mb-md-0">
+          <img src="image/image_166.png" alt="Logo" class="logo-img" />
+        </div>
+
+        <!-- Search -->
+        <div class="col-md-5 d-none d-md-block search-bar-desktop">
+          <div class="d-flex align-items-center">
+            <input type="text" class="form-control rounded-pill ps-4" placeholder="Search for the products..." />
+            <button class="btn btn-light rounded-circle ms-2 shadow-sm search-icon-btn">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Icons -->
+        <div class="col-2 col-md-3 offset-md-2 d-flex justify-content-end gap-3">
+          <i class="bi bi-search fs-5 d-md-none"></i>
+          <i class="bi bi-person fs-5"></i>
+          <div class="d-flex align-items-center">
+            <i class="bi bi-cart fs-5 me-1"></i>
+            <span class="d-none d-md-inline">0 Items</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Offcanvas Mobile Menu -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a href="#" class="d-block mb-2 text-decoration-none text-dark"><i class="bi bi-info-circle text-danger me-1"></i>
+        About Us</a>
+      <a href="#" class="d-block mb-2 text-decoration-none text-dark"><i class="bi bi-envelope text-danger me-1"></i>
+        Contact Us</a>
+      <a href="#" class="d-block mb-2 text-decoration-none text-dark"><i class="bi bi-shield-lock text-danger me-1"></i>
+        Service & Warranty</a>
+      <a href="#" class="d-block mb-3 text-decoration-none text-dark"><i
+          class="bi bi-journal-text text-danger me-1"></i> Catalogues</a>
+      <ul class="justify-content-start text-decoration-none" style="list-style: none; padding: 0%; margin: 2%;">
+        <!-- Dropdown Menus -->
+        <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle refre-li" href="#"
+            data-bs-toggle="dropdown"><i class="bi bi-hdd"></i> REFRIGERATION</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle refre-li" href="#"
+            data-bs-toggle="dropdown"><i class="bi bi-display"></i> COOKING</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle refre-li" href="#"
+            data-bs-toggle="dropdown"><i class="bi bi-columns-gap"></i> STAINLESS STEEL</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle refre-li" href="#"
+            data-bs-toggle="dropdown"><i class="bi bi-cup-straw"></i> BEVERAGE</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle refre-li" href="#"
+            data-bs-toggle="dropdown"><i class="bi bi-truck"></i> FOOD PREP</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle refre-li" href="#"
+            data-bs-toggle="dropdown"><i class="bi bi-droplet-half"></i> DISHWASHER</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <!-- Highlighted Buttons -->
+        <li class="nav-item"><a class=" text-dark bg-green py-4" href="#">NEW ARRIVALS</a></li>
+        <li class="nav-item"><a class=" text-dark bg-yellow" href="#">SPECIAL OFFERS & CLEARANCE</a></li>
+        <li class="nav-item"><a class="text-dark bg-red" href="#">2ND HAND &EX SHOWROOM</a></li>
+      </ul>
+      <div class="d-flex align-items-center mb-3">
+        <span class="me-2">Excl. GST</span>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="gstToggleMobile" checked />
+        </div>
+        <span class="ms-1">Incl. GST</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category Menu Bar -->
+  <nav class="bg-dark text-white">
+    <div class="container">
+      <ul class="nav flex-wrap justify-content-start">
+        <!-- Dropdown Menus -->
+        <li class="nav-item dropdown"><a class="nav-link text-white dropdown-toggle refre-li" href="#"
+            data-bs-toggle="dropdown"><i class="bi bi-hdd"></i> REFRIGERATION</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-link text-white dropdown-toggle refre-li" href="#"
+            data-bs-toggle="dropdown"><i class="bi bi-display"></i> COOKING</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-link text-white dropdown-toggle refre-li" href="#"
+            data-bs-toggle="dropdown"><i class="bi bi-columns-gap"></i> STAINLESS STEEL</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-link text-white dropdown-toggle refre-li" href="#"
+            data-bs-toggle="dropdown"><i class="bi bi-cup-straw"></i> BEVERAGE</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-link text-white dropdown-toggle refre-li" href="#"
+            data-bs-toggle="dropdown"><i class="bi bi-truck"></i> FOOD PREP</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-link text-white dropdown-toggle refre-li" href="#"
+            data-bs-toggle="dropdown"><i class="bi bi-droplet-half"></i> DISHWASHER</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <!-- Highlighted Buttons -->
+        <li class="nav-item"><a class="nav-link text-white bg-green py-4" href="#">NEW ARRIVALS<br></a></li>
+        <li class="nav-item"><a class="nav-link text-white bg-yellow" href="#">SPECIAL OFFERS<br>& CLEARANCE</a></li>
+        <li class="nav-item"><a class="nav-link text-white bg-red" href="#">2ND HAND &<br>EX SHOWROOM</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Banner Image -->
+  <div class="container-fluid banner-container">
+    <img src="image/Slider.png" alt="Banner Image" class="img-fluid-banner" />
+  </div>
+  <!-- Category section-->
+
+  <div class="container my-5">
+    <h2 class="text-center mb-4 fw-bold">Categories</h2>
+    <div class="carousel-wrapper position-relative">
+      <button class="carousel-btn prev-btn">‹</button>
+      <div class="row gx-4 category-row flex-nowrap" id="carouselRow"></div>
+      <button class="carousel-btn next-btn">›</button>
+    </div>
+  </div>
+  <!-- New Arrivals Section -->
+
+  <div class="container my-5">
+    <h2 class="text-center fw-bold">New Arrivals</h2>
+    <div class="carousel-wrapper position-relative">
+      <button class="carousel-btn prev-btn">‹</button>
+      <div class="row flex-nowrap gap-5 category-row" id="productCarousel"></div>
+      <button class="carousel-btn next-btn">›</button>
+    </div>
+
+    <h4 class="text-center mt-4">Shop by Brands</h4>
+    <div class="carousel-wrapper position-relative">
+      <button class="carousel-btn prev-btn">‹</button>
+      <div class="row gap-3 brand-row" id="brandCarousel"></div>
+      <button class="carousel-btn next-btn">›</button>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container">
+      <h4 class="text-center mt-4"style="font-weight: 700;" >Hot Deals</h4>
+      <div class="carousel-wrapper position-relative">
+        <button class="carousel-btn prev-btn">‹</button>
+        <div class="row hot-deal-row" id="hotDealCarousel"></div>
+        <button class="carousel-btn next-btn">›</button>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="text-center mt-4 " style="font-weight: 700;">Clearance</h4>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <img src="image/Clearance bannar/Banner1.png" alt="Clearance Image 1"
+            class="img-fluid w-100 rounded scroll-animate from-left">
+        </div>
+        <div class="col-lg-6 mb-4">
+          <img src="image/Clearance bannar/Banner2.png" alt="Clearance Image 2"
+            class="img-fluid w-100 rounded scroll-animate from-right">
+        </div>
+        <div class="col-lg-6 mb-4">
+          <img src="image/Clearance bannar/Banner3.png" alt="Clearance Image 3"
+            class="img-fluid w-100 rounded scroll-animate from-left">
+        </div>
+        <div class="col-lg-6 mb-4">
+          <img src="image/Clearance bannar/Banner4.png" alt="Clearance Image 4"
+            class="img-fluid w-100 rounded scroll-animate from-right">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container">
+      <h2 class="text-center" style="font-weight: 700;">Customer Reviews</h2>
+      <div class="carousel-wrapper position-relative">
+        <button class="carousel-btn prev-btn">‹</button>
+        <div class="review-row" id="reviewCarousel"></div>
+        <button class="carousel-btn next-btn">›</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container about-section my-5">
+    <div class="row align-items-center py-4">
+      <div class="col-md-6 scroll-animate from-left">
+        <h3 style="font-weight: 700;">About</h3>
+        <h4 class="text-danger">Federal Hospitality Equipment – F.H.E</h4>
+        <p>
+          Federal Hospitality Equipment (F.H.E) is an exclusive Australian & New Zealand Commercial Kitchen Equipment
+          importer, having an excellence history of more than forty-five years serving the commercial catering, baking,
+          and food industries. We import very large, exclusive and professional range of commercial food equipment,
+          catering, kitchen equipment, commercial refrigeration, stainless steel kitchen storage which enables us to
+          offer our customers unsurpassed value and quality.
+        </p>
+        <p>
+          Federal Hospitality Equipment works with you from beginning to end, and take your designs and implement them
+          in a professional way. We have all your catering equipment needs in one shop, please call us at <strong
+            style="color: red;">09 415 6470</strong> to discuss your requirement or you can find out more about our shop
+          fittings and used catering equipment online as well. We deliver catering equipment in all major cities.
+        </p>
+      </div>
+      <div class="col-md-6 scroll-animate from-right">
+        <img src="image/about.png" class="img-fluid-about" alt="About FHE Image">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="hospital-section-container">
+
+
+            <div class="row">
+
+
+              <div class="col-lg-6 col-12">
+                <h2 style="align-items: start;">Hospitality Stories Blogs</h2>
+                <div class="row hospital-section-row">
+
+                  <!-- Blog Card 1 -->
+                  <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="hospital-section-card">
+                      <img src="image/c1.png" alt="Chop Faster">
+                      <p>Chop Faster, Stress Less: the compact Food Processor That</p>
+                      <button onclick="readMore()">Read More →</button>
+                    </div>
+                  </div>
+
+                  <!-- Blog Card 2 -->
+                  <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="hospital-section-card">
+                      <img src="image/c2.png" alt="All You Can Eat">
+                      <p>Why Your All-You-Can-Eat Isn't Working (Hint: It's Not the Menu)</p>
+                      <button onclick="readMore()">Read More →</button>
+                    </div>
+                  </div>
+
+                  <!-- Blog Card 3 -->
+                  <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="hospital-section-card">
+                      <img src="image/c3.png" alt="Pizza Oven">
+                      <p>Tired of Babysitting Your Pizza Oven? You’re Not Alone</p>
+                      <button class="mb-4" onclick="readMore()">Read More →</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <h2 style="align-items: end;">Catalogue Promotion</h2>
+                <div class="row hospital-section-promos">
+                  <div class="col-6 mb-4">
+                    <div class="hospital-section-promo">
+                      <img src="image/Catelogue 1.png" alt="Promo 1">
+                    </div>
+                  </div>
+                  <div class="col-6 mb-4">
+                    <div class="hospital-section-promo">
+                      <img src="image/Catelogue 2.png" alt="Promo 2">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-icons-section">
+    <div class="info-icons">
+      <div class="info-item">
+        <div class="icon-circle">🚚</div>
+        <h4>Quick Delivery</h4>
+        <p>(Metro & Regional)</p>
+      </div>
+      <div class="info-item">
+        <div class="icon-circle">🔄</div>
+        <h4>30 Days Return</h4>
+        <p>Exchange or Refund(T&C)</p>
+      </div>
+      <div class="info-item">
+        <div class="icon-circle">💳</div>
+        <h4>Secure Payment</h4>
+        <p>100% secure payment</p>
+      </div>
+      <div class="info-item">
+        <div class="icon-circle">💬</div>
+        <h4>Instant Live Chat</h4>
+        <p>9am - 5pm, Mon-Fri</p>
+      </div>
+    </div>
+
+    <div class="newsletter-section">
+      <div class="newsletter-content">
+        <div class="newsletter-text">
+          <h2>Join our newsletter</h2>
+          <p>Subscribe to get information about products and discounts</p>
+        </div>
+        <div class="newsletter-form">
+          <div class="input-wrapper">
+            <input type="email" placeholder="Enter your email here...">
+            <button type="submit">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="desktop">
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <img src="image/image_166.png" alt="Federal Hospitality Equipment Logo" class="footer-logo">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="image/ri_facebook-fill.png"></a>
+            <a href="#"><img src="image/mdi_instagram.png" alt="Instagram"></a>
+            <a href="#"><img style="width: 34px; height: 34px;" src="image/d2.png" alt="X"></a>
+            <a href="#"><img src="image/ri_linkedin-fill.png" alt="LinkedIn"></a>
+          </div>
+        </div>
+
+
+        <div class="footer-section">
+          <h4>My Account</h4>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Wishlist</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Help & Information</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Returns and Exchanges</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Get in Touch</h4>
+          <p>📞 09 415 6470</p>
+          <p>📧 nzoffice@foodequipment.com.au</p>
+          <p>📍 146 Neilson Street Onehunga 1643, Auckland, New Zealand</p>
+        </div>
+      </div>
+      <div class="footer-section">
+
+      </div>
+
+      <div class="payment-logos">
+        <img style="width: 400px; height: auto;" src="image/d1.png" alt="PayPal">
+        <!-- <img src="visa.png" alt="Visa">
+        <img src="discover.png" alt="Discover">
+        <img src="mastercard1.png" alt="MasterCard">
+        <img src="mastercard2.png" alt="MasterCard"> -->
+      </div>
+
+
+      <p class="copyright">
+        © 2003-2024 Federal Hospitality Equipment Australia Pty Ltd.
+      </p>
+    </footer>
+  </div>
+
+  <div class="mobile">
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <img src="image/image_166.png" alt="Federal Hospitality Equipment Logo" class="footer-logo">
+        </div>
+
+
+        <div class="footer-section">
+          <h4>My Account</h4>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Wishlist</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Help & Information</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Returns and Exchanges</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Get in Touch</h4>
+          <p>📞 09 415 6470</p>
+          <p>📧 nzoffice@foodequipment.com.au</p>
+          <p>📍 146 Neilson Street Onehunga 1643, Auckland, New Zealand</p>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="image/ri_facebook-fill.png"></a>
+          <a href="#"><img src="image/mdi_instagram.png" alt="Instagram"></a>
+          <a href="#"><img style="width: 34px; height: 34px;" src="image/d2.png" alt="X"></a>
+          <a href="#"><img src="image/ri_linkedin-fill.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+
+      <div class="payment-logos">
+        <img style="width: 400px; height: auto;" src="image/d1.png" alt="PayPal">
+        <!-- <img src="visa.png" alt="Visa">
+        <img src="discover.png" alt="Discover">
+        <img src="mastercard1.png" alt="MasterCard">
+        <img src="mastercard2.png" alt="MasterCard"> -->
+      </div>
+
+
+      <p class="copyright">
+        © 2003-2024 Federal Hospitality Equipment Australia Pty Ltd.
+      </p>
+    </footer>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
