@@ -623,7 +623,6 @@ body {
 .input-wrapper input[type="email"] {
     width: 100%;
     padding: 12px 120px 12px 20px;
-    /* space on right for button */
     border: 2px solid white;
     border-radius: 50px;
     background: transparent;
@@ -679,7 +678,6 @@ body {
     .input-wrapper input[type="email"] {
         width: 100%;
         padding: 12px 110px 12px 20px;
-        /* Keep space for button */
         font-size: 14px;
     }
 
@@ -818,7 +816,6 @@ body {
 
     .hospital-section-row>.col-md-4 {
         flex: 0 0 50%;
-        /* Show two cards at a time */
         min-width: 50%;
         scroll-snap-align: start;
     }
@@ -867,7 +864,6 @@ body {
 @media (max-width: 768px) {
     .info-item {
         flex: 0 0 48%;
-        /* mobile view: 2 in row */
         max-width: 48%;
     }
 }
@@ -887,8 +883,6 @@ body {
         gap: 20px;
         text-align: start;
     }
-
-    /* Full width sections (logo, social, payment) */
     .footer-container .footer-section:first-child,
     .footer-section:nth-child(4),
     .payment-logos {
